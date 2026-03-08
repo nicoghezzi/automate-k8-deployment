@@ -47,3 +47,35 @@ This project demonstrates how to automate Kubernetes deployments using Ansible o
 - Successfully automated the creation of a Kubernetes namespace (`my-app`)  
 - Verified namespace creation in the cluster.
 - Deployment of nginx app to K8. 
+
+## Steps
+
+Step 1: Create Kubernetes Cluster using Terraform
+![Lighthouse Report](/images/1_terraformapply.png)
+
+Step 2: Review EC2 instance
+![Lighthouse Report](/images/2_creationofEC2instance.png)
+
+Step 3: Verification of Cluster in AWS Console
+![Lighthouse Report](/images/3_verificationofcluster.png)
+
+Step 4: Create a K8 Namespace
+![Lighthouse Report](/images/4_createnamespace.png)
+
+Step 5: Check Cluster over Terminal
+![Lighthouse Report](/images/5_checkcluster.png)
+
+Step 6: Check K8 Namespace over Terminal
+![Lighthouse Report](/images/6_kubectlgetnamespaces.png)
+
+Step 7: Execute Playbook to deploy nginx application
+![Lighthouse Report](/images/7_playbookfornginx.png)
+
+Step 8: Check K8 pod
+![Lighthouse Report](/images/8_checkdeploymenttoK8.png)
+
+Step 9: Check Service
+![Lighthouse Report](/images/9_checkK8-service.png)
+
+Step 10: Access Nginx App via browser.
+![Lighthouse Report](/images/10_accessnginxappviabrowser.png)
