@@ -1,52 +1,87 @@
-# Kubernetes Deployment Automation with Ansible
+# 🚀 Kubernetes Deployment Automation: Ansible → EKS
 
-Automated deployment of a Kubernetes namespace to an **AWS EKS cluster** using **Ansible**, showcasing DevOps and infrastructure-as-code skills.
+![Orchestration: Kubernetes](https://img.shields.io/badge/Kubernetes-%23326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
+![Automation: Ansible](https://img.shields.io/badge/Ansible-%23EE0000?style=for-the-badge&logo=ansible&logoColor=white)
+![Infrastructure: Terraform](https://img.shields.io/badge/Terraform-%235835CC?style=for-the-badge&logo=terraform&logoColor=white)
+![Cloud: AWS](https://img.shields.io/badge/AWS-%23FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white)
+![CLI: kubectl](https://img.shields.io/badge/kubectl-%23326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
 
----
-
-## Project Overview
-
-This project demonstrates how to automate Kubernetes deployments using Ansible on an AWS EKS cluster:
-
-- Provisioned the cluster using **Terraform**  
-- Configured Ansible to communicate with local and remote hosts  
-- Deployed a Kubernetes namespace (`my-app`) via an Ansible playbook  
-- Verified cluster connectivity and namespace creation using `kubectl`  
+Automated Kubernetes deployments on Amazon EKS using Ansible, demonstrating infrastructure-as-code and cloud-native automation workflows.
 
 ---
 
-## Technology Stack
+## 📌 Overview
 
-- **AWS EKS** – managed Kubernetes cluster  
-- **Terraform** – infrastructure as code for cluster provisioning  
-- **Ansible** – automation and orchestration  
-- **kubectl** – Kubernetes CLI  
-- **DigitalOcean** – optional test hosts for Ansible connectivity  
+This project showcases an end-to-end Kubernetes automation setup:
 
----
-
-## Skills Gained
-
-- Writing and running **Ansible playbooks** for Kubernetes resources  
-- Managing **kubeconfig** and connecting to EKS clusters  
-- Troubleshooting **private vs public API access** in EKS  
-- Understanding **infrastructure as code** with Terraform and cloud networking  
+- Provisioned an EKS cluster using Terraform  
+- Configured Ansible for local and remote execution  
+- Deployed a Kubernetes namespace (`my-app`) via playbooks  
+- Verified cluster connectivity and deployment using `kubectl`  
+- Deployed an NGINX application to the cluster  
 
 ---
 
-## Challenges
+## ⚙️ Workflow
 
-- Initial connectivity issues due to **private-only EKS endpoint**  
-- SSH host key verification for droplets in DigitalOcean  
-- Parsing errors and YAML formatting in Ansible playbooks  
+### 1. Infrastructure Provisioning
+- Created EKS cluster using Terraform  
+- Configured networking and cluster access  
+
+### 2. Ansible Configuration
+- Set up inventory for local and remote hosts  
+- Enabled Ansible to interact with Kubernetes cluster  
+
+### 3. Kubernetes Deployment
+- Executed Ansible playbook to create namespace (`my-app`)  
+- Applied Kubernetes resources to cluster  
+
+### 4. Validation
+- Verified namespace creation using `kubectl`  
+- Confirmed application deployment (NGINX)  
 
 ---
 
-## Outcome
+## 🧰 Tech Stack
 
-- Successfully automated the creation of a Kubernetes namespace (`my-app`)  
-- Verified namespace creation in the cluster.
-- Deployment of nginx app to K8. 
+- AWS EKS (Managed Kubernetes)  
+- Terraform (Infrastructure as Code)  
+- Ansible (Automation & Orchestration)  
+- kubectl (Kubernetes CLI)  
+- DigitalOcean (Optional test hosts)  
+
+---
+
+## 💡 Key Skills Demonstrated
+
+- Writing Ansible playbooks for Kubernetes resources  
+- Managing kubeconfig and EKS cluster access  
+- Automating Kubernetes deployments  
+- Understanding cloud networking and API access patterns  
+- Integrating Terraform and Ansible workflows  
+
+---
+
+## ⚠️ Challenges & Fixes
+
+- **EKS connectivity issues** → Resolved private vs public API endpoint access  
+- **SSH host key verification** → Managed known_hosts for remote connections  
+- **YAML parsing errors** → Fixed formatting issues in Ansible playbooks  
+
+---
+
+## ✅ Outcome
+
+- ✔ Automated creation of Kubernetes namespace (`my-app`)  
+- ✔ Verified deployment directly in EKS cluster  
+- ✔ Successfully deployed NGINX application  
+- ✔ Established repeatable Kubernetes deployment workflow  
+
+---
+
+## 🧪 Takeaway
+
+This project demonstrates how to automate Kubernetes deployments using Ansible on top of Terraform-provisioned infrastructure. It highlights real-world challenges in cluster connectivity, configuration management, and YAML-based automation—while reinforcing best practices for reliable cloud-native deployments.
 
 ## Steps
 
